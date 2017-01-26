@@ -1,5 +1,5 @@
 # foundry10
-Repo for the Foundry-10 Project
+Repo for the Foundry-10 Project.
 A VR American-History simulator!
 
 ## Motivation
