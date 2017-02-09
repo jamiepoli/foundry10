@@ -13,7 +13,7 @@ motivate a more hands-on and immersive approach to history in schools.
 ## Main Contributors
 
 ### Team Leads
-...
+Jamie Polintan - @jamiepoli
 
 ### Developers
 ...
