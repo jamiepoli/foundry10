@@ -38,11 +38,28 @@ public class ControllerLaserPointer : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		laser = Instantiate(laserPrefab);
+		laserTransform = laser.transform;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		// if controller is held down, shoot raycast from controller
+	if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+	{
+    		RaycastHit hit;
+
+    	// show laser, store point which laser raycast hits
+    	if (Physics.Raycast(trackedObj.transform.position, transform.forward, out hit, 100))
+    		{
+        		hitPoint = hit.point;
+        		ShowLaser(hit);
+    		}
+	}
+	else // otherwise hide laser when touchpad is released
+		{
+    		laser.SetActive(false);
+		}	
 	}
 }
