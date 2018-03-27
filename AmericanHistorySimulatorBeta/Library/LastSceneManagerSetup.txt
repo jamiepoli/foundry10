@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/HTC.UnityPlugin/StereoRendering/Examples/5. Two-Way Portal/TwoWayPortalExample.unity
+  isLoaded: 1
+  isActive: 1
